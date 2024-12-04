@@ -1,0 +1,133 @@
+班級:企管1A
+姓名:陳怡滋
+學號:113B05595
+
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="即時天氣動態，天氣預報，全球天氣更新">
+    <title>天氣動態</title>
+    <link rel="stylesheet" href="style.css"> <!-- 連接CSS樣式表 -->
+</head>
+<body>
+
+    <!-- 頁首 -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>天氣動態</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#current-weather">即時天氣</a></li>
+                <li><a href="#forecast">天氣預報</a></li>
+                <li><a href="#climate-trends">氣候趨勢</a></li>
+                <li><a href="#news">天氣新聞</a></li>
+                <li><a href="#contact">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主頁內容區 -->
+    <section id="home" class="hero-section">
+        <h2>即時天氣動態</h2>
+        <div class="current-weather">
+            <h3>當前天氣：台北市</h3>
+            <p>溫度：22°C</p>
+            <p>濕度：78%</p>
+            <p>風速：10 km/h</p>
+            <p>天氣狀況：多雲</p>
+        </div>
+        <div class="forecast-summary">
+            <h4>未來7天天氣預報</h4>
+            <ul>
+                <li>12月5日：晴，最高25°C，最低18°C</li>
+                <li>12月6日：多雲，最高22°C，最低17°C</li>
+                <li>12月7日：雷陣雨，最高20°C，最低16°C</li>
+                <li>12月8日：小雨，最高18°C，最低14°C</li>
+                <li>12月9日：晴，最高23°C，最低19°C</li>
+                <li>12月10日：陰天，最高21°C，最低17°C</li>
+                <li>12月11日：大雨，最高19°C，最低15°C</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 即時天氣區 -->
+    <section id="current-weather" class="weather-section">
+        <h2>即時天氣</h2>
+        <div class="weather-info">
+            <p>請選擇您所在的城市查看即時天氣。</p>
+            <label for="city">選擇城市：</label>
+            <select id="city">
+                <option value="taipei">台北市</option>
+                <option value="kaohsiung">高雄市</option>
+                <option value="taichung">台中市</option>
+            </select>
+            <button>查詢</button>
+        </div>
+        <div class="radar">
+            <h3>雷達圖</h3>
+            <p>動態更新的雷達圖將顯示當前降水情況。</p>
+            <!-- 雷達圖可以嵌入一個圖片或API來動態更新 -->
+        </div>
+    </section>
+
+    <!-- 天氣預報區 -->
+    <section id="forecast" class="forecast-section">
+        <h2>天氣預報</h2>
+        <p>查看未來幾天的天氣預測，包括高低溫、降水機率等。</p>
+        <ul>
+            <li>12月5日：最高26°C，最低18°C，降水機率20%</li>
+            <li>12月6日：最高24°C，最低19°C，降水機率30%</li>
+            <li>12月7日：最高22°C，最低17°C，降水機率50%</li>
+            <!-- 更多預報信息 -->
+        </ul>
+    </section>
+
+    <!-- 氣候趨勢區 -->
+    <section id="climate-trends" class="climate-section">
+        <h2>氣候趨勢分析</h2>
+        <p>查看長期氣候變化及全球氣候趨勢。</p>
+        <!-- 可以嵌入圖表或使用API顯示趨勢 -->
+        <div class="climate-charts">
+            <h3>全球變暖趨勢</h3>
+            <p>逐年氣溫變化趨勢。</p>
+        </div>
+    </section>
+
+    <!-- 天氣新聞區 -->
+    <section id="news" class="news-section">
+        <h2>天氣新聞</h2>
+        <ul>
+            <li><a href="#">颱風“海燕”接近台灣，可能帶來暴風雨。</a></li>
+            <li><a href="#">全球變暖加劇，極端天氣事件頻發。</a></li>
+            <li><a href="#">2024年氣候預測：熱浪將成為常態。</a></li>
+            <!-- 更多天氣新聞 -->
+        </ul>
+    </section>
+
+    <!-- 聯絡我們 -->
+    <section id="contact" class="contact-section">
+        <h2>聯絡我們</h2>
+        <p>有任何問題或建議，請與我們聯絡。</p>
+        <form>
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">電子郵件：</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">訊息：</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">送出</button>
+        </form>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>&copy; 2024 天氣動態網站. 版權所有.</p>
+    </footer>
+
+</body>
+</html>
